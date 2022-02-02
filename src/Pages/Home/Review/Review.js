@@ -11,26 +11,28 @@ const Review = (props) => {
     const {name,description,rating} =props.review;
     return (
         <div>
-              <Grid sx={{mb:5}} item xs={4} sm={4} md={4}  >
-        <Card sx={{ minWidth: 275,border: 0,boxShadow: 0, }}>
-        
-   <CardContent>
-     <Typography sx={{fontWeight:600, color:'green'}} variant="h6" component="div">
-      {name}
-     </Typography>
-     
-     <Typography sx={{mx:3, my:2}} variant="body2" color="text.secondary">
-     {description}
-     </Typography>
-     
-     <Rating name="read-only" value={rating} readOnly />
-     
-    
-   </CardContent>
+              <Grid item xs={4} sm={4} md={4}>
+            <Card sx={{marginTop:'30px', minWidth: 275,border: 0,boxShadow: 0 }}>
+            <React.Fragment>
+    <CardContent>
    
+       <Typography variant="h5" sx={{fontWeight:600, margin:'8px 0px'}} component="div">
+         {name}
+        </Typography>
+    
+       <Typography variant="h7"  sx={{fontWeight:500, margin:'5px 15px'}}  component="div">
+         {description}
+        </Typography>
+
+        <Typography component="legend"></Typography>
+      <Rating name="read-only" value={rating} readOnly />
+
+    </CardContent>
+
   
- </Card>
-     </Grid>
+  </React.Fragment>
+            </Card>
+        </Grid>
            
         </div>
     );

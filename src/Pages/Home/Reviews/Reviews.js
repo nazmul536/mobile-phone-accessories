@@ -15,7 +15,13 @@ const reviews=[
         key:'2',
         name:'Samsung Galaxy M02',
         description:"Nice Features and i really pleased",
-        rating:5,
+        rating:4,
+    },
+    {
+        key:'3',
+        name:'Samsung Galaxy A22',
+        description:"Amazing Phone",
+        rating:3,
     }
 ]
 
@@ -25,7 +31,7 @@ const Reviews = () => {
                <Typography sx={{fontWeight:600, color:'green', margin:'3% 0px'}}  variant="h4" component="div">
      Reviews
      </Typography>
-      <Grid container spacing={{xs:2, md:2}} columns={{xs:12, md:4, sm:8}}>
+      <Grid container spacing={{xs:2, md:2}} columns={{xs:12,lg:4, md:4, sm:8}}>
        {
            reviews.map(review=><Review
            key={review.id}
