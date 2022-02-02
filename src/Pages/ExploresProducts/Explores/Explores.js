@@ -69,6 +69,62 @@ const explores=[
         price:"Comming Soon",
         rating:5
     },
+    {
+        key:'9',
+        name:'Amazon Fire HD 10 (2021)',
+        img:'https://i.ibb.co/rtQqMsh/Amazon-Fire-HD-10-2019-Price-in-Bangladesh.jpg',
+        color:'Black, Plum, Twilight Blue & White',
+        price:"Comming Soon",
+        rating:5
+    },
+    {
+        key:'10',
+        name:'Google Pixel 6 Pro',
+        img:'https://i.ibb.co/WyjPckV/10-removebg-preview.png',
+        color:'Cloudy White, Sorta Sunny & Stormy Black',
+        price:100000,
+        rating:5
+    },
+    {
+        key:'11',
+        name:'Google Pixel 6',
+        img:'https://i.ibb.co/4FVPvWv/11-removebg-preview.png',
+        color:'Sorta Seafoam, Kinda Coral & Stormy Black',
+        price:65000,
+        rating:4
+    },
+    {
+        key:'12',
+        name:'Google Pixel 4a 5G',
+        img:'https://i.ibb.co/cJzg014/12-removebg-preview.png',
+        color:'Just Black',
+        price:42000,
+        rating:5
+    },
+    {
+        key:'13',
+        name:'Gionee G13 Pro',
+        img:'https://i.ibb.co/dmRzVCZ/13-removebg-preview.png',
+        color:'Black, Blue, Silver & Purple',
+        price:'Comming Soon',
+        rating:5
+    },
+    {
+        key:'14',
+        name:'Gionee K30 Pro',
+        img:'https://i.ibb.co/1K8jv8p/14-removebg-preview.png',
+        color:'Black, Blue & White',
+        price:12000,
+        rating:5
+    },
+    {
+        key:'15',
+        name:'Gionee K30 Pro',
+        img:'https://i.ibb.co/51gw5sF/15-removebg-preview-1.png',
+        color:'Jade Green & Pearl White',
+        price:100000,
+        rating:5
+    },
 ]
 
 

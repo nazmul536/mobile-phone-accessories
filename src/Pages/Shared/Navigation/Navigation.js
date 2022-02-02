@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
     return (
@@ -25,8 +26,10 @@ const Navigation = () => {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
            Mobile Phone 
           </Typography>
-          <Button color="inherit">Explore Now</Button>
-          <Button color="inherit">Login</Button>
+         
+          <Link to='/ExploresProducts'> <Button style={{ textDecoration:'none', color:'white', fontWeight:600, fontSize:15}} color="inherit">Explore Now</Button></Link>
+          
+          <Button  color="inherit">Login</Button>
         </Toolbar>
       </AppBar>
     </Box>
