@@ -28,7 +28,7 @@ const services=[
         img:'https://i.ibb.co/fYDxR9v/73c5ea414032ed0f691beea32a843c55-removebg-preview.png',
         price:14186,
         color:'Gray, White, Green',
-        rating:2
+        rating:4
     },
     {
         key:'4',
