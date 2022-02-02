@@ -28,7 +28,7 @@ const services=[
         img:'https://i.ibb.co/fYDxR9v/73c5ea414032ed0f691beea32a843c55-removebg-preview.png',
         price:14186,
         color:'Gray, White, Green',
-        rating:5
+        rating:2
     },
     {
         key:'4',
@@ -36,7 +36,7 @@ const services=[
         img:'https://i.ibb.co/0mh8RrH/1-removebg-preview.png',
         price:20885,
         color:' Red, White',
-        rating:5
+        rating:4
     },
     {
         key:'5',
@@ -44,7 +44,7 @@ const services=[
         img:'https://i.ibb.co/3Cp5n1w/2-removebg-preview.png',
         price:26000,
         color:'Blue, Red, White',
-        rating:5
+        rating:3
     },
     {
         key:'6',
