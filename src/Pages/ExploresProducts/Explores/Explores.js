@@ -13,6 +13,62 @@ const explores=[
         price:146999,
         rating:5
     },
+    {
+        key:'2',
+        name:'Apple iPhone 12 ',
+        img:'https://i.ibb.co/thzLFfy/2-removebg-preview.png',
+        color:'Silver, Graphite, Gold & PacBlack, White, Red, Green & Blue',
+        price:117999,
+        rating:5
+    },
+    {
+        key:'3',
+        name:' Apple iPhone 13 Pro',
+        img:'https://i.ibb.co/jMDC50T/3-removebg-preview.png',
+        color:'Graphite, Gold, Silver & Sierra Blue',
+        price:147999,
+        rating:5
+    },
+    {
+        key:'4',
+        name:'Asus Smartphone for Snapdragon ',
+        img:'https://i.ibb.co/jGPw4qh/4.jpg',
+        color:'Graphite, Gold, Silver & Sierra Blue',
+        price:80000,
+        rating:5
+    },
+    {
+        key:'5',
+        name:'Asus ROG Phone 3',
+        img:'https://i.ibb.co/cxcqQcR/5-removebg-preview.png',
+        color:'Black',
+        price:54000,
+        rating:5
+    },
+    {
+        key:'6',
+        name:'Asus Zenfone 7 Pro ZS671KS',
+        img:'https://i.ibb.co/kG7J0cz/Asus-Zenfone-7-Pro-details-including-Launch-Date-full-specifications-features-RAM-Internal-Storage-S.jpg',
+        color:'Aurora Black & Pastel White',
+        price:80000,
+        rating:5
+    },
+    {
+        key:'7',
+        name:'Amazon Fire HD 10 Plus (2021)',
+        img:'https://i.ibb.co/KGr13C5/Amazon-Fire-HD-10-Plus-2021.jpg',
+        color:'Slate',
+        price:"Comming Soon",
+        rating:4
+    },
+    {
+        key:'8',
+        name:'Amazon Fire HD 10',
+        img:'https://i.ibb.co/2MhNPtC/Amazon-Fire-HD-10-2021.jpg',
+        color:'Slate',
+        price:"Comming Soon",
+        rating:5
+    },
 ]
 
 

@@ -37,7 +37,7 @@ const Explores = (props) => {
       <Rating name="read-only" value={rating} readOnly />
 
        <Typography variant="h6"  sx={{fontWeight:600, color:'red', margin:'5px 0px'}}  component="div">
-         ${price}
+         {price}
         </Typography>
     
     </CardContent>
