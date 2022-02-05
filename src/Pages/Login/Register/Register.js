@@ -1,32 +1,39 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import { Container } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 import CircularProgress from '@mui/material/CircularProgress';
 import Alert from '@mui/material/Alert';
 
+
 const Register = () => {
     const [loginData,setLoginData]=useState({})
+    const{user,registerUser,isLoading,authError}=useAuth()
+    const history=useHistory();
 
-    const handleOnBlur = e => {
-        const field= e.target.name;
+    const handleOnBlur=e=>{
+        const field=e.target.name;
         const value=e.target.value;
-        const newLoginData=[...loginData]
+        const newLoginData={ ...loginData};
         newLoginData[field]=value;
         setLoginData(newLoginData);
     }
+    const handleLoginSubmit=e=>{
+      if(loginData.password !== loginData.password2){
+        alert('Password did not match');
+      }
 
-    const handleLoginSubmit =e=> {
-        alert('hlw')
-        e.preventDefault();
+      registerUser(loginData.email, loginData.password, loginData.name, history);
+      e.preventDefault();
     }
 
     return (
-     
+      
         <Container>
            
         <Box sx={{ flexGrow: 1 }}>
@@ -80,7 +87,13 @@ const Register = () => {
     <Button  sx={{width:'75%', m:1}} type='submit' variant="contained">Register</Button>
 
     </form>
-    
+    {isLoading&&<CircularProgress />}
+        {user?.email && <Alert severity="success">User Created Successfully</Alert>
+  }
+  {
+    authError &&   <Alert severity="error">{authError}</Alert>
+  }
+  
       </Grid>
       <Grid item xs={12} md={6}>
 

@@ -9,7 +9,7 @@ import Rating from '@mui/material/Rating';
 
 
 const Explores = (props) => {
-    const {name,img,color,price,rating}=props.explore;
+    const {name,img,color,price,rating}=props?.exploreProduct;
     return (
         <Grid item xs={4} sm={4} md={4}>
             <Card sx={{marginTop:'30px', minWidth: 275,border: 0,boxShadow: 0 }}>
