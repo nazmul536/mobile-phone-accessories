@@ -9,7 +9,7 @@ import useAuth from './../../../hooks/useAuth';
 
 const AddProduct = () => {
     const [exploreProducts,setExploreProducts]=useState([])
-    const {user}=useAuth();
+    // const {user}=useAuth();
     // const product={products};
     console.log( exploreProducts)
 
@@ -26,7 +26,7 @@ const AddProduct = () => {
     fetch('http://localhost:5000/exploreProducts',{
       method:'POST',
       headers: { "content-type": "application/json" },
-      body: JSON.stringify(user),
+      body: JSON.stringify(exploreProducts),
     })
     .then(res=>res.json())
     .then(data=>{
@@ -61,7 +61,7 @@ const AddProduct = () => {
         label="Name"
         name="name"
         type="name"
-        defaultValue={user.displayName}
+        // defaultValue={user.displayName}
         onBlur={handleAddProduct}
         variant="standard" />
         <br/>
